@@ -11,7 +11,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* ---Common--- */
+/*** ---Common--- ***/
 :root {
     --primary-color: #f7f5f0;
     --text-color: #b78a28;
@@ -19,6 +19,27 @@ body {
 
 .container {
     max-width: 1170px;
+    padding: 20px;
+}
+
+/* General title */
+
+/* flex of main-title And media__body--info */
+.flex-gr {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.main-heading {
+    font-weight: 600;
+    font-size: 2rem;
+
+}
+.main-btn {
+    /* visibility: hidden; */
+    font-weight: 400;
+    font-size: 1.6rem;
 }
 
 input,
@@ -132,3 +153,60 @@ header {
 }
 
 /***** Main *****/
+.main-title {
+    margin-bottom: 24px;
+}
+/* media */
+.media {
+    display: flex;
+    align-items: center;
+}
+.media--thumb {
+    display: block;
+    min-width: 72px;
+    min-height: 96px;
+    margin-right: 16px;
+    overflow: hidden;
+}
+.media--thumb img {
+    width: 100%;
+    object-fit: cover;
+}
+.media__body--title {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.2;
+
+    word-break: break-word;
+}
+.media__body--desc {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #666;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    word-break: break-word;
+}
+
+.media__body--info {
+    margin: 8px 0;
+    
+}
+.author {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    color: #666;
+}
+.gender {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    padding: 3px 8px;
+    color: var(--text-color);
+    border: 1px solid #b78a28;
+}
