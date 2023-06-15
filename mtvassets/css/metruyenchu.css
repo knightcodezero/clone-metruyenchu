@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ---Common--- */
+:root {
+    --primary-color: #f7f5f0;
+    --text-color: #b78a28;
+}
+
+.container {
+    max-width: 1170px;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+a:hover {
+    color: #b78a28;
+}
+
+/***** Header *****/
+header {
+    background-color: #f4f4f2;
+}
+.nav {
+    display: flex;
+    align-items: center;
+}
+/* Nav logo */
+.nav__logo--box .logo img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+}
+.nav__logo--box {
+    margin-right: 30px;
+}
+/* Nav button */
+.nav__btn {
+    position: relative;
+    padding: 24px 16px;
+    flex-grow: 1;
+}
+.nav__btn:hover {
+    background-color: #e2e2df;
+    color: var(--text-color);
+}
+
+.nav__btn--title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Nav content hidden */
+.nav__btn--hidden {
+    position: absolute;
+    display: none;
+    gap: 50px;
+    background-color: #f7f5f0;
+    left: 0;
+    top: 66px;
+}
+
+.nav__btn:hover .nav__btn--hidden{
+    display: block;
+}
+
+.hidden__box {
+    display: flex;
+    align-items: center;
+}
+.hidden__box--categories a {
+    display: inline-block;
+    padding: 12px 48px;
+    white-space: nowrap;
+}
+/* Nav search */
+.nav__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    flex-grow: 1;
+}
+
+.nav__form--search {
+    border: none;
+    padding: 0 80px 0 20px;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+}
+.nav__form--btn {
+    margin-left: -60px;
+    z-index: 2;
+    width: 60px;
+    height: 40px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background: #ffffff;
+}
+.nav__form--btn:hover {
+    background: #e2e2df;
+}
+.main-slide {
+    z-index: -1;
+}
+.main__slide--img {
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+}
+
+/***** Main *****/
